@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B2CCA5B16170156005A9403 /* RemindersViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindersViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B2CCA5B16170156005A9403 /* ReminderView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReminderView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B2CCA5F16170156005A9403 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B2CCA6116170156005A9403 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B2CCA6316170156005A9403 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,7 +87,7 @@
 		9B2CCA5C16170156005A9403 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B2CCA5B16170156005A9403 /* RemindersViewer.app */,
+				9B2CCA5B16170156005A9403 /* ReminderView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,7 +156,7 @@
 			);
 			name = ReminderView;
 			productName = RemindersViewer;
-			productReference = 9B2CCA5B16170156005A9403 /* RemindersViewer.app */;
+			productReference = 9B2CCA5B16170156005A9403 /* ReminderView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
