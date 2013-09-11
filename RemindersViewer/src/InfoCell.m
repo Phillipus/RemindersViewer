@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *notesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *idLabel;
 
 @end
 
@@ -21,6 +22,7 @@
 - (void) updateCell:(EKReminder *)reminder {
     self.titleLabel.text = reminder.title;
     self.notesLabel.text = reminder.notes;
+    self.idLabel.text = [reminder.URL  path];
     
     if([reminder hasAlarms]) {
         EKAlarm *alarm = [reminder.alarms objectAtIndex:0];
@@ -28,7 +30,10 @@
         NSDateFormatter *df = [[NSDateFormatter alloc] init];
         [df setDateFormat:@"dd/MM/yyyy HH:mm"];
         
-        self.timeLabel.text =  [df stringFromDate:[alarm absoluteDate]];
+        self.timeLabel.text = [df stringFromDate:[alarm absoluteDate]];
+    }
+    else {
+        self.timeLabel.text = nil;
     }
 }
 
