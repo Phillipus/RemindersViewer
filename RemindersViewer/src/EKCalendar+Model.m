@@ -14,14 +14,14 @@
 
 @implementation EKCalendar (Model)
 
-static char const *const key = "remindersKey";
+static char remindersKey;
 
 - (void)setReminders:(NSMutableArray *)reminders {
-    objc_setAssociatedObject(self, key, reminders, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, &remindersKey, reminders, OBJC_ASSOCIATION_RETAIN);
 }
 
 - (NSMutableArray *)reminders {
-    NSMutableArray *_reminders = objc_getAssociatedObject(self, key);
+    NSMutableArray *_reminders = objc_getAssociatedObject(self, &remindersKey);
     if(!_reminders) {
         _reminders = [[NSMutableArray alloc] init];
         self.reminders = _reminders;
