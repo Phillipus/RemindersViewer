@@ -167,11 +167,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Dada Beatnik";
-				TargetAttributes = {
-					9B2CCA5A16170156005A9403 = {
-						DevelopmentTeam = 375WT5T296;
-					};
-				};
 			};
 			buildConfigurationList = 9B2CCA5516170156005A9403 /* Build configuration list for PBXProject "RemindersViewer" */;
 			compatibilityVersion = "Xcode 3.2";
